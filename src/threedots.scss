@@ -1,0 +1,6 @@
+@use 'three-dots' with (
+    $dot-width: 15px,
+    $dot-height: 15px,
+    $dot-spacing: 30px,
+    $dot-color: #3b82f6,
+);

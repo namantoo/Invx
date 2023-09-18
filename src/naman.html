@@ -1,0 +1,58 @@
+const [metamaskError, setError] = useState(0);
+
+useEffect(() => {
+    let intervalId = null;
+    let isUpdateCalled = false;
+    if (rainbowTimer) {
+      intervalId = setInterval(() => {
+        setRemainingTime((prevRemainingTime) => {
+          if (prevRemainingTime > 0) {
+            return prevRemainingTime - 1;
+          } else {
+            clearInterval(intervalId);
+            return 0;
+          }
+        });
+        //the function to call the api at every second
+        // console.log(rainbowStatus)
+        if (!isUpdateCalled && rainbowStatus !== "failed") {
+         console.log(metamaskError)
+         if(metamaskError !== 4001){
+          wallettransactiononscanner()
+         } else if(metamaskError === 4001){
+          isUpdateCalled = true;
+          cancelrainbowwallettransactionstatus();    
+         }
+        } else if(rainbowStatus === "true"){
+            // console.log("success")
+        }
+      }, 1000 );
+    }
+    const cancelChargeIntervalId = setInterval(() => {
+      if (rainbowTimer) {
+        isUpdateCalled = true;
+        cancelrainbowwallettransactionstatus();
+      }
+    }, 600000);
+    return () => {
+      clearInterval(intervalId);
+      clearInterval(cancelChargeIntervalId);
+    };
+  }, [code, rainbowTimer, expiration, transactionId]);
+
+
+  const payLink = async () => {
+      .transfer(receiver, ammount)
+      .send({
+        from: sender,
+      })
+      .then(function (result) {
+        // console.log(result);
+        // console.log(result["transactionHash"]);
+      })
+      .catch(function (err) {
+        console.log("error found");
+        console.log(err.code)
+        setError(err.code)
+      });
+  };
