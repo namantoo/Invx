@@ -32,4 +32,17 @@ Built with the MERN stack:
 
 ### Installation
 
-1. Clone the repository: direct to 
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/namantoo/Invx]
+2. Navigate to the project directory and install dependencies:
+   ```bash
+   cd crypto-investing-platform
+npm install
+3. Start the server:
+  ```bash
+
+Now, open your browser and navigate to `http://localhost:3000` to access the platform.
+
+This project is made by **Naman**. Follow me on Twitter: [![Twitter Follow](https://img.shields.io/twitter/follow/namantoo?style=social)](https://twitter.com/namantoo)
+
