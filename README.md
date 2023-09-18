@@ -32,6 +32,4 @@ Built with the MERN stack:
 
 ### Installation
 
-1. Clone the repository:
-   ```bash
-   git clone [repository_link]
+1. Clone the repository: direct to 
