@@ -40,9 +40,8 @@ Built with the MERN stack:
    cd crypto-investing-platform
 npm install
 3. Start the server:
-  ```bash
 
 Now, open your browser and navigate to `http://localhost:3000` to access the platform.
 
-This project is made by **Naman**. Follow me on Twitter: [![Twitter Follow](https://img.shields.io/twitter/follow/namantoo?style=social)](https://twitter.com/namantoo)
+This project is made by **Naman**. Follow me on Twitter:(https://twitter.com/namantoo)
 
