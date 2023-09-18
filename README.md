@@ -2,7 +2,7 @@
 
 Welcome to the Crypto Investing Platform - a full-stack solution for all your cryptocurrency investment needs. Connect your favorite wallets, invest, track transactions, and manage your portfolio with ease.
 
-![Dashboard Screenshot](path_to_dashboard_screenshot.png)
+![Dashboard](dashboard.png)
 *Screenshot of the dashboard*
 
 ## Features
