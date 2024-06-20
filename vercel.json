@@ -9,6 +9,7 @@
     }
   ],
   "scripts": {
-    "build": "npm run build"
+    "build": "npm run build",
+    "postinstall": "npm install --legacy-peer-deps"
   }
 }
